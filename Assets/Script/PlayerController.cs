@@ -10,12 +10,12 @@ public class PlayerController
     public PlayerController(InputActionReference mAction, PlayerMovement mov)
     {
         Debug.Log("PlayerController creado!");
-        mAction = moveAction;
-        mov = _movement;
+        moveAction = mAction;
+        _movement = mov;
     }
     public void UpdateController()
     {
-        Vector2 action = moveAction.action.ReadValue<Vector2>();
+        Vector2 action = moveAction.action.ReadValue<Vector2>();    
 
         Vector3 dir = new Vector3(action.x, 0, action.y);
 

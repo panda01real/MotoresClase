@@ -7,8 +7,8 @@ public class PlayerMovement
 
     public PlayerMovement(Transform t, float s)
     {
-        t = transform;
-        s = _speed;
+        transform = t;
+        _speed = s;
     }
     public void Move(Vector3 dir)
     {
