@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class CharacterController : MonoBehaviour
 {
-   public Character character;
+   [SerializeField] public Character character;
 
    public InputActionReference action;
 
