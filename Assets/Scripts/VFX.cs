@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class VFX : MonoBehaviour
 {
-    [SerializeField]
-    Player _player;
+    [SerializeField] Player player;
 
     private void Awake()
     {
-        //_player.PlayerGetDamage;
+        player.PlayerGetDamage += Particles; //suscripcion al delegate
+    }
+
+    void Particles()
+    {
+        Debug.Log("Particulas daño");
     }
 }
