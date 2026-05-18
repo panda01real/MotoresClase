@@ -20,6 +20,6 @@ public class Player : MonoBehaviour
     {
         _life -= damage;
         
-        PlayerGetDamage?.Invoke();S
+        PlayerGetDamage?.Invoke();
     }
 }
